@@ -1,54 +1,68 @@
-# 🛍️ Yunique Fashion Store — Yuno Payment Integration Demo
 
-This project simulates the integration of **Yuno’s SDK FULL** for an embedded checkout experience inside Yunique Fashion Store’s India website.
+📌 Yuno Payment Integration — Technical Assessment
 
-It demonstrates:
-✔ Credit Card payment flow  
-✔ Embedded, **no redirect** checkout experience  
-✔ Secure order creation handled via backend  
-✔ Flexible architecture to add more payment methods later  
+This project demonstrates a simulated Yuno Checkout Integration including UI, payment flow, session creation logic, and confirmation screen — aligned with the test-mode requirements from the Yuno Dashboard.
 
-> Purpose: Assignment for **Technical Support Analyst Challenge — Yuno**
-> Includes Dashboard configuration + SDK Full checkout flow demo. :contentReference[oaicite:1]{index=1}
+> The assignment is fully implemented using the sandbox structure + API-like flow.
+
+
+
 
 ---
 
-## 🏗️ Architecture Overview
+🚀 Features Implemented
 
-| Layer | Responsibility |
-|------|----------------|
-| Frontend | Beautiful product page + embedded credit card form, looks like official Yuno Checkout UI |
-| Backend (Node.js + Express) | Handles session creation logic |
-| Dummy Transaction Handler | Shows **Payment Successful** screen instantly (Test mode) |
+Feature	Status
 
----
+Product Checkout Page (Yuno-style UI)	✅
+Embedded Credit Card Form	✅
+Create Payment Session Button	✅
+Success Confirmation & Order UI (No redirect required for test mode)	✅
+Backend APIs using Express	✅
+Configurable .env with Yuno keys	🔐 Supported
+Folder structure aligned with professional Yuno SDK implementation	✅
 
-## 📌 Dashboard Setup Done
 
-| Dashboard Feature | Status |
-|------------------|-------|
-| ✓ Test Mode Enabled | ✔ |
-| ✓ Yuno Account ID / User ID configured | ✔ |
-| ✓ Test Payment Gateway for **Credit Cards** | ✔ |
-| ✓ Routing rules for India (INR) | ✔ |
-| ✓ Checkout Builder: SDK Full enabled | ✔ |
-
-> Fully aligned with requirements: Test transaction + Routing + Checkout Builder setup :contentReference[oaicite:2]{index=2}
 
 ---
 
-## 🚀 Tech Stack
+📂 Folder Structure
 
-| Tech | Usage |
-|------|------|
-| HTML + CSS | Checkout UI |
-| Vanilla JavaScript | Payment form logic |
-| Node + Express | Backend server simulation |
+yuno-assessment/
+├── public/
+│   ├── index.html     # Checkout page
+│   ├── style.css      # UI styling
+│   ├── app.js         # Session request + success handler
+├── server.js          # Backend API/server (Express)
+├── .env               # Yuno keys (not committed)
+├── README.md
+└── package.json
+
 
 ---
 
-## ▶️ How to Run
+🛠️ Tech Stack
 
-```bash
+Layer	Technology
+
+Frontend	HTML, CSS, JavaScript
+Backend	Node.js + Express
+API Handling	Fetch (simulated session creation + success UI)
+Version Control	Git & GitHub
+Test Environment	Localhost
+
+
+
+---
+
+▶️ How to Run Locally
+
+# Install dependencies
 npm install
+
+# Start server
 npm start
+
+Then open:
+
+👉 http://localhost:5000/
